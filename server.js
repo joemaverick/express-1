@@ -10,7 +10,8 @@ app.set('view engine','ejs');//set views to EJS
 app.get('/',(req,res)=>{
 //   res.send(`App is running on port ${PORT}`);
 //   res.json(data);
-    res.render('pages/index');
+    var title = "Our Home Page";
+    res.render('pages/index',{title:title});
 });
 
 
