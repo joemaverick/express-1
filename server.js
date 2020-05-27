@@ -17,7 +17,7 @@ app.get('/users',(req,res)=>{
 //   res.send(`App is running on port ${PORT}`);
 //   res.json(data);
     var title = 'Our Home Page';
-    res.render('pages/index',{
+    res.render('users/index',{
         title:title,
         users:data,
     });
