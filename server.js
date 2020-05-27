@@ -5,8 +5,16 @@ const PORT = 3000;
 
 
 //we can now server up static pages
-app.use(express.static(__dirname));
-// app.listen(3000);
+// app.use(express.static(__dirname));
+
+//this is how a route is built in Express
+app.get('/',(req,res)=>{
+  res.send(`App is running on port ${PORT}`);
+
+});
+
+
+
 app.listen(PORT,()=>{
   console.log(`App is running on port ${PORT}`);
   console.log(data)
